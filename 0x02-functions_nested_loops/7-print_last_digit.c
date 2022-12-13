@@ -9,13 +9,12 @@
 int print_last_digit(int n)
 {
 	int a = n % 10;
+	int j;
 
 	if (a < 0)
 	{
 		a *= -1;
 	}
-
-	int j = 1;
 
 	for  (j = 1; j <= 2; j++)
 	{
