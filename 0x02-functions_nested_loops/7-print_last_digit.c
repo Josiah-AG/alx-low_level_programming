@@ -18,7 +18,7 @@ int print_last_digit(int n)
 
 	for  (j = 1; j <= 2; j++)
 	{
-		_putchar(a);
+		return (a);
 	}
 	return (0);
 }
