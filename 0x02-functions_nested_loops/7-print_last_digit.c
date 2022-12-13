@@ -15,7 +15,7 @@ int print_last_digit(int n)
 		a *= -1;
 	}
 
-	int j;
+	int j = 1;
 
 	for  (j = 1; j <= 2; j++)
 	{
