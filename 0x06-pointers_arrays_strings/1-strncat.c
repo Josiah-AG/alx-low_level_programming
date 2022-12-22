@@ -4,6 +4,7 @@
  * _strncat - main function
  * @dest: first input
  * @src: 2nd input
+ * @n: the number of bytes
  * Return: destination function
  */
 
