@@ -1,19 +1,35 @@
 #include "main.h"
 
-int is_divisible(int num, int div);
-
 /**
- * is_divisible - main function
- * @num: num
- * @div: divis
- * Return: result
+ * helperFunction - helper function
+ * @num: number being checked
+ * @i: another check
+ * Return: 1
  */
 
-int is_divisible(int num, int div)
+int helperFunction(int num, int i)
 {
-	if (num % div == 0)
-		return (0);
-	if (div == num / 2)
+	if (i < num)
+	{
+		if (num % i == 0)
+			return (0);
+		else
+			return (helperFunction(num, i + 1));
+	}
+	else
 		return (1);
-	return (is_divisible(num, div + 1));
+}
+
+/**
+ * is_prime_number - main function
+ * @n: cheked
+ * Return: int
+ */
+
+int is_prime_number(int n)
+{
+	if (n <= 1)
+		return (0);
+	else
+		return (helperFunction(n, 2));
 }
