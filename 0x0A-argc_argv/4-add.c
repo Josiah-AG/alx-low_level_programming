@@ -17,7 +17,10 @@ int check_num(char *str)
 	while (count < strlen(str))
 	{
 		if (!isdigit(str[count]))
+		{
 			return (0);
+		}
+
 		count++;
 	}
 	return (1);
@@ -40,7 +43,10 @@ int main(int argc, char *argv[])
 	while (count < argc)
 	{
 		if (check_num(argv[count]))
+		{
 			str_to_int = atoi(argv[count]);
+			sum += str_to_int;
+		}
 		else
 		{
 			printf("Error\n");
