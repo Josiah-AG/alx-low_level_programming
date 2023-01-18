@@ -1,5 +1,9 @@
 #include "3-calc.h"
 #include <stdlib.h>
+#define op_add
+#define op_sub
+#define op_mul
+#define op_mod
 
 /**
  * get_op_func - Selects the correct function to perform
